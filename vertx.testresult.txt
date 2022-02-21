@@ -1,0 +1,94 @@
+./apache-jmeter-5.2.1/bin/jmeter -n -t benchmark.jmx     -J threads=5000     -J seconds=10     -J loop=50     -l result.jtl     -j result.log
+
+
+### threads, startup period, loop count
+### 1000, 0, 100
+# vert.x
+summary = 800000 in 00:00:31 = 25924.4/s Avg:    36 Min:     0 Max:  1274 Err:     0 (0.00%)
+summary = 800000 in 00:00:29 = 27849.3/s Avg:    33 Min:     0 Max:  1070 Err:     0 (0.00%) 
+summary = 800000 in 00:00:28 = 28080.0/s Avg:    32 Min:     0 Max:  1035 Err:     0 (0.00%)
+summary = 800000 in 00:00:29 = 27718.1/s Avg:    32 Min:     0 Max:  1293 Err:     0 (0.00%)
+summary = 800000 in 00:00:29 = 27872.6/s Avg:    32 Min:     0 Max:  1338 Err:     0 (0.00%)
+
+# sprintboot
+summary = 800000 in 00:03:37 = 3679.2/s Avg:   269 Min:     0 Max: 16276 Err:     6 (0.00%)
+summary = 800000 in 00:01:54 = 7040.1/s Avg:   138 Min:     0 Max:  7406 Err:     0 (0.00%)
+summary = 800000 in 00:01:54 = 7047.7/s Avg:   138 Min:     0 Max:  7196 Err:     0 (0.00%)
+summary = 800000 in 00:01:52 = 7157.9/s Avg:   137 Min:     0 Max:  3360 Err:     0 (0.00%)
+summary = 800000 in 00:01:54 = 7046.5/s Avg:   139 Min:     0 Max:  3170 Err:     0 (0.00%)
+summary = 800000 in 00:01:57 = 6837.4/s Avg:   142 Min:     0 Max:  7260 Err:     0 (0.00%)
+
+### 2000, 0, 100
+# vert.x
+summary = 1600000 in 00:01:01 = 26082.4/s Avg:    70 Min:     0 Max:  1469 Err:     0 (0.00%)
+summary = 1600000 in 00:01:01 = 26401.3/s Avg:    68 Min:     0 Max:  1206 Err:     0 (0.00%)
+summary = 1600000 in 00:01:02 = 25867.4/s Avg:    70 Min:     0 Max:  1138 Err:     0 (0.00%)
+summary = 1600000 in 00:01:03 = 25344.5/s Avg:    72 Min:     0 Max:  1205 Err:     0 (0.00%)
+summary = 1600000 in 00:01:02 = 25745.0/s Avg:    70 Min:     0 Max:  1110 Err:     0 (0.00%)
+
+# springboot
+summary = 1600000 in 00:03:53 = 6868.8/s Avg:   285 Min:     0 Max: 31334 Err:     0 (0.00%)
+summary = 1600000 in 00:03:50 = 6970.4/s Avg:   281 Min:     0 Max: 15431 Err:     0 (0.00%)
+summary = 1600000 in 00:03:51 = 6922.7/s Avg:   284 Min:     0 Max:  7456 Err:     0 (0.00%)
+summary = 1600000 in 00:03:53 = 6876.5/s Avg:   285 Min:     0 Max: 15438 Err:     0 (0.00%)
+summary = 1600000 in 00:03:50 = 6964.9/s Avg:   282 Min:     0 Max:  7405 Err:     0 (0.00%)
+
+### 3000, 0, 100
+# vert.x
+summary = 2400000 in 00:01:35 = 25357.6/s Avg:   105 Min:     0 Max:  3148 Err:     0 (0.00%)
+summary = 2400000 in 00:01:36 = 25077.1/s Avg:   107 Min:     0 Max:  1487 Err:     0 (0.00%)
+summary = 2400000 in 00:01:36 = 24972.7/s Avg:   108 Min:     0 Max:  3222 Err:     0 (0.00%)
+summary = 2400000 in 00:01:35 = 25215.1/s Avg:   106 Min:     0 Max:  1370 Err:     0 (0.00%)
+summary = 2400000 in 00:01:33 = 25710.8/s Avg:   104 Min:     0 Max:  3241 Err:     0 (0.00%)
+
+#springboot
+summary = 2400000 in 00:06:04 = 6598.8/s Avg:   443 Min:     0 Max: 63523 Err:     0 (0.00%)
+summary = 2400000 in 00:05:53 = 6799.2/s Avg:   431 Min:     0 Max: 31763 Err:     0 (0.00%)
+summary = 2400000 in 00:05:56 = 6747.0/s Avg:   434 Min:     0 Max: 31624 Err:     0 (0.00%)
+summary = 2400000 in 00:06:00 = 6674.4/s Avg:   439 Min:     0 Max: 15634 Err:     0 (0.00%)
+summary = 2400000 in 00:05:59 = 6682.9/s Avg:   434 Min:     0 Max: 31860 Err:     0 (0.00%)
+
+### 4000, 0, 100
+#vert.x
+summary = 3200000 in 00:03:13 = 16569.7/s Avg:   211 Min:     0 Max:  5056 Err:     0 (0.00%)
+summary = 3200000 in 00:03:11 = 16724.2/s Avg:   206 Min:     0 Max:  7344 Err:     0 (0.00%)
+summary = 3200000 in 00:03:23 = 15751.9/s Avg:   212 Min:     0 Max:  7107 Err:     0 (0.00%)
+summary = 3200000 in 00:02:59 = 17859.7/s Avg:   181 Min:     0 Max:  5421 Err:     0 (0.00%)
+summary = 3200000 in 00:03:37 = 14719.7/s Avg:   201 Min:     0 Max:  7293 Err:     0 (0.00%)
+
+#springboot
+summary = 3200000 in 00:07:56 = 6727.4/s Avg:   563 Min:     0 Max: 127254 Err:   158 (0.00%)
+summary = 3200000 in 00:08:05 = 6598.1/s Avg:   584 Min:     0 Max: 127404 Err:    30 (0.00%)
+summary = 3200000 in 00:07:58 = 6692.9/s Avg:   567 Min:     0 Max: 127657 Err:   329 (0.01%)
+summary = 3200000 in 00:08:52 = 6010.2/s Avg:   571 Min:     0 Max: 127582 Err:   304 (0.01%)
+summary = 3200000 in 00:07:42 = 6921.2/s Avg:   549 Min:     0 Max: 127262 Err:   142 (0.00%)
+
+### 5000, 0, 10
+# vert.x 
+summary = 400000 in 00:00:23 = 17373.9/s Avg:   124 Min:     0 Max:  3201 Err:     0 (0.00%)
+summary = 400000 in 00:00:26 = 15408.9/s Avg:    69 Min:     0 Max:  1110 Err:     0 (0.00%)
+summary = 400000 in 00:00:25 = 16110.8/s Avg:   156 Min:     0 Max:  7118 Err:     0 (0.00%)
+summary = 400000 in 00:00:26 = 15391.1/s Avg:    69 Min:     0 Max:  1229 Err:     0 (0.00%)
+summary = 400000 in 00:00:28 = 14354.4/s Avg:   169 Min:     0 Max:  7795 Err:     0 (0.00%)
+
+# springboot
+summary = 400000 in 00:01:14 = 5398.6/s Avg:   597 Min:     0 Max: 63177 Err:   132 (0.03%)
+summary = 400000 in 00:01:21 = 4923.1/s Avg:   505 Min:     0 Max: 63458 Err:  1131 (0.28%)
+summary = 400000 in 00:01:28 = 4533.5/s Avg:   583 Min:     0 Max: 63115 Err:   187 (0.05%)
+summary = 400000 in 00:01:15 = 5346.2/s Avg:   565 Min:     0 Max: 63148 Err:   120 (0.03%)
+summary = 400000 in 00:01:08 = 5875.7/s Avg:   604 Min:     0 Max: 31706 Err:   465 (0.12%)
+
+### 5000, 10, 50
+# vert.x
+summary = 2000000 in 00:04:13 = 7906.8/s Avg:   556 Min:     0 Max: 12553 Err:     0 (0.00%)
+summary = 2000000 in 00:04:26 = 7514.7/s Avg:   585 Min:     0 Max: 12095 Err:     0 (0.00%)
+summary = 2000000 in 00:04:30 = 7419.6/s Avg:   601 Min:     0 Max: 13827 Err:     5 (0.00%)
+summary = 2000000 in 00:04:06 = 8139.1/s Avg:   545 Min:     0 Max: 16987 Err:     0 (0.00%)
+summary = 2000000 in 00:04:06 = 8125.9/s Avg:   556 Min:     0 Max: 12438 Err:   350 (0.02%)
+
+# springboot
+summary = 2000000 in 00:05:39 = 5896.3/s Avg:   655 Min:     0 Max: 127334 Err:   313 (0.02%)
+summary = 2000000 in 00:05:10 = 6453.2/s Avg:   694 Min:     0 Max: 136627 Err:   241 (0.01%)
+summary = 2000000 in 00:04:52 = 6851.4/s Avg:   660 Min:     0 Max: 64490 Err:    24 (0.00%)
+summary = 2000000 in 00:04:54 = 6814.3/s Avg:   657 Min:     0 Max: 127637 Err:   103 (0.01%)
+summary = 2000000 in 00:05:29 = 6086.6/s Avg:   654 Min:     0 Max: 127613 Err:   335 (0.02%)
