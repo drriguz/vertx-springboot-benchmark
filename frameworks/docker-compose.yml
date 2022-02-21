@@ -1,0 +1,32 @@
+version: "3.3"
+services:
+  app-springboot:
+    build:
+      context: ./springboot
+      dockerfile: ./Dockerfile
+    image: springboot-app:latest
+    ports:
+      - "8081:8080"
+    deploy:
+      resources:
+        limits:
+          cpus: "4"
+          memory: 4096M
+        reservations:
+          cpus: "0.25"
+          memory: 128M
+  app-vertx:
+    build:
+      context: ./vertx
+      dockerfile: ./Dockerfile
+    image: vertx-app:latest
+    ports:
+      - "8082:8080"
+    deploy:
+      resources:
+        limits:
+          cpus: "4"
+          memory: 4096M
+        reservations:
+          cpus: "0.25"
+          memory: 128M
